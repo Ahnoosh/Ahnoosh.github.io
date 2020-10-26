@@ -28,7 +28,7 @@ function GetBookings() {
                 row.insertCell(2).innerHTML = gEmail;
                 row.insertCell(3).innerHTML = gPax;
                 row.insertCell(4).innerHTML = ""; //remarks
-                row.insertCell(5).innerHTML = "<button id= '"; + buttonId + " '>Delete</button><br/>"";
+                row.insertCell(5).innerHTML = "<button id= '"; + buttonId + " '>Delete</button><br/> "
 
                 bookingIds.push(buttonId);
 
@@ -48,6 +48,7 @@ function GetBookings() {
         });
 }
 
+/*
 function DeleteBooking(id) {
 
     if (confirm("Are you sure you want to delete?")) {
@@ -68,5 +69,5 @@ function DeleteBooking(id) {
         alert("Delete cancelled");
     }
 
-}
+} */
 
