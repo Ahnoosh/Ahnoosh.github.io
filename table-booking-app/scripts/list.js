@@ -24,7 +24,7 @@ function GetBookings() {
 
                 let row = bookings.insertRow(bookings.rows.length);
                 row.insertCell(0).innerHTML = gId;
-                row.insertCell(1).ineerHTML = gName;
+                row.insertCell(1).innerHTML = gName;
                 row.insertCell(2).innerHTML = gEmail;
                 row.insertCell(3).innerHTML = gPax;
                 row.insertCell(4).innerHTML = ""; //remarks
