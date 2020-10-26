@@ -48,7 +48,7 @@ function GetBookings() {
         });
 }
 
-/*
+
 function DeleteBooking(id) {
 
     if (confirm("Are you sure you want to delete?")) {
@@ -58,16 +58,17 @@ function DeleteBooking(id) {
             method: 'DELETE',
         })
             .then((response) => {
-                let table = document.getElementById("booking-list");
+                /*let table = document.getElementById("booking-list");
                 for (let i = 1; i < table.rows.length; i++) {
                     table.deleteRow(i);
                 }
                 GetBookings();
+            }); */
+                location.reload();
             });
-
     } else {
         alert("Delete cancelled");
     }
 
-} */
 
+}
