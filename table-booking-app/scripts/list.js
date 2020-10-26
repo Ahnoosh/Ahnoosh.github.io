@@ -10,8 +10,8 @@ function GetBookings() {
         .then(json => {
             // Do something with the data
             //console.log(json.bookings);
-            var bookings = document.getElementById("bookings");
-            var bookingIds = [];
+            var bookings = document.getElementById("booking-list");
+            // var bookingIds = [];
 
 
             for (var i = 0; i < json.bookings.length; i++) {
@@ -28,7 +28,7 @@ function GetBookings() {
                 row.insertCell(2).innerHTML = gEmail;
                 row.insertCell(3).innerHTML = gPax;
                 row.insertCell(4).innerHTML = ""; //remarks
-                row.insertCell(5).innerHTML = "<button id= '"; + buttonId + " '>Delete</button><br/> "
+                row.insertCell(5).innerHTML = "<button id= '"; + buttonId + " '>Delete</button><br/> ";
 
                 bookingIds.push(buttonId);
 
