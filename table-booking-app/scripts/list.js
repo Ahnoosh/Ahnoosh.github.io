@@ -1,5 +1,5 @@
 
-windowt.addEventListener("load", function () {
+window.addEventListener("load", function () {
     GetBookings();
 });
 
@@ -57,7 +57,10 @@ function DeleteBooking(id) {
             method: 'DELETE',
         })
             .then((response) => {
-
+                let table = document.getElementById("booking-list");
+                for (let i = 1; i < table.rows.length; i++) {
+                    table.deleteRow(i);
+                }
                 GetBookings();
             });
 
