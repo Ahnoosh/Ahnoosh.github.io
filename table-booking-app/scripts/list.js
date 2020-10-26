@@ -11,7 +11,7 @@ function GetBookings() {
             // Do something with the data
             //console.log(json.bookings);
             var bookings = document.getElementById("booking-list");
-            // var bookingIds = [];
+            var bookingIds = [];
 
 
             for (var i = 0; i < json.bookings.length; i++) {
