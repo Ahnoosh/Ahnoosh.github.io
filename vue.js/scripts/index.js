@@ -8,7 +8,7 @@ var app = new Vue({
 var app2 = new Vue({
     el: "#app-2",
     data: {
-        message: "You loaded this page on " + new DataCue().toLocalString(),
+        message: "You loaded this page on " + new Data().toLocalString(),
         linkURL: "https://www.google.com.my",
         linkText: "Go to Google Malaysia!"
     }
